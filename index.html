@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Cyrene Meme</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="resources/css/index.css">
+  <link rel="icon" href="resources/images/logo.png" type="image/png">
+</head>
+
+<!-- 嗨，是你在偷看我嗎~ ♪-->
+<!-- 無名者的批註：嗨嘍，嗨嘍，你們有誰看到一個粉粉的，小小的兔子，像桃子一樣，是長不高的，說話的時候帶著小尾巴，她的名字叫昔漣，我找不到她了■■■......-->
+
+<!-- Hi, is that you peeking at me~ ♪ -->
+<!-- Annotation by the Nameless One: Hello, hello, has anyone seen a little pink bunny, small and peach-like, who can’t grow tall, and speaks with a little tail at the end of her words? Her name is Cyrene, and I can’t find her... -->
+
+<body>
+  <div class="code-overlay" aria-hidden="true">
+    <pre id="code-stream"></pre>
+  </div>
+  <div id="intro">
+    <div class="intro-inner" role="dialog" aria-label="Intro">
+      <div class="intro-line">
+        <span>Hello World</span>
+        <span class="dots" aria-hidden="true"></span>
+        <span class="caret" aria-hidden="true"></span>
+      </div>
+      <div class="intro-hint" aria-hidden="true">Please Press Any Key♪</div>
+    </div>
+  </div>
+  <div class="background">
+<video
+  id="bg-video"
+  class="background-video"
+
+  src="resources/images/cyrene.mp4"
+
+  autoplay
+  muted
+  loop
+
+  playsinline
+  webkit-playsinline
+  x5-playsinline="true"
+  x5-video-player-type="h5"
+  x5-video-orientation="portrait"
+
+  preload="auto"
+  disablepictureinpicture
+  controlsList="nodownload nofullscreen noremoteplayback"
+></video>
+
+
+    <div class="info">
+      <div class="lang-switch">
+        <span id="switch-en" role="button" tabindex="0">EN</span> |
+        <span id="switch-zh" role="button" tabindex="0">ZH</span>
+      </div>
+
+      <div class="gradient-overlay"></div>
+
+      <div class="time">
+        <h2 class="title">H E L L O &nbsp; W O R L D</h2>
+
+        <div class="time-box">
+          <div class="days">
+            <p class="day value">00</p>
+            <span class="text">days</span>
+          </div>
+          <div class="hours">
+            <p class="hour value">00</p>
+            <span class="text">hours</span>
+          </div>
+          <div class="mins">
+            <p class="min value">00</p>
+            <span class="text">min</span>
+          </div>
+          <div class="secs">
+            <p class="sec value">00</p>
+            <span class="text">sec</span>
+          </div>
+        </div>
+
+        <p class="sub-title">「This time, together with me…」</p>
+        <p class="sub-title">「Let’s write a new chapter of the story♪」</p>
+        <p class="sub-title tips"></p>
+
+        <div class="meta-row" role="contentinfo" aria-label="Site meta">
+          <div class="icp-box">
+            <a class="meta-badge icp"
+               href="https://icp.gov.moe/?keyword=20259093"
+               target="_blank"
+               rel="noopener noreferrer">
+              萌ICP备20259093号
+            </a>
+          </div>
+
+          <a class="meta-badge email"
+             href="mailto:cyrene@cyrene.meme"
+             aria-label="Email: cyrene@cyrene.meme">
+            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M2 5h20v14H2V5zm2 2v10h16V7l-8 5L4 7z" fill="currentColor"/>
+            </svg>
+            <span>cyrene@cyrene.meme</span>
+          </a>
+
+          <div class="counter-box">
+            <span class="counter-label">「 访 问 人 数: 」</span>
+            <img
+              src="https://count.getloli.com/@cyrenecount?name=cyrenecount&theme=food&padding=8&offset=0&align=top&scale=1&pixelated=1&darkmode=0"
+              alt="Site visit counter"
+              class="visit-counter"
+              loading="lazy"
+              decoding="async"
+              aria-label="Site visit counter">
+          </div>
+        </div>
+
+        <div class="music-control">
+          <img id="music-btn" src="resources/images/musicon.webp" alt="Music Toggle">
+        </div>
+      </div>
+    </div>
+  </div>
+  <audio id="bg-music" preload="none" loop>
+    <source src="resources/audio/true.mp3" type="audio/mpeg">
+  </audio>
+
+  <footer class="footer">
+    © All rights reserved by miHoYo | Other properties and any right, title, and interest thereof and therein
+    (intellectual property rights included) not derived from Honkai: Star Rail belong to their respective owners.
+  </footer>
+  <script src="resources/js/jquery-3.2.1.min.js" defer></script>
+  <script src="resources/js/index.js" defer></script>
+  <script src="resources/js/code-overlay.js" defer></script>
+</body>
+</html>
